@@ -49,7 +49,7 @@
             margin-top: 20px;
         }
 
-        .audio-button {
+        .audio-button, .close-button {
             padding: 10px 20px;
             font-size: 1.2em;
             background-color: #4caf51;
@@ -58,9 +58,11 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
 
-        .audio-button:hover {
+        .audio-button:hover, .close-button:hover {
             background-color: #24883d;
         }
     </style>
@@ -73,7 +75,7 @@
 
     <h1>📢 Srs. Condôminos!</h1>
     <h3>Obrigatório e imprescindível a leitura do regulamento interno ou se preferir clique no botão abaixo para ouvir as regras</h3>
-    <h4>Regulamento interno em PDF <a href="regulamento-interno.pdf" target="_blank">Clique aqui</a></h4>
+    <h4>Regulamento interno em PDF <a href="regulamento-interno.pdf">Clique aqui</a></h4>
 
     <div class="button-container">
         <a href="regras.html" class="audio-button">Ouça o regulamento interno</a>
@@ -108,6 +110,10 @@
 
     <p>📌 Lembre-se: O grupo foi criado para facilitar a convivência, e não para gerar conflitos. O bom senso e o respeito devem prevalecer sempre!</p>
     <a href="https://www.linkedin.com/in/deividfcastro/" target="_blank">Desenvolvido por Deivid Castro</a>
+
+    <div class="button-container">
+        <button class="close-button" onclick="window.close()">Fechar a Página</button>
+    </div>
 
 </body>
 
