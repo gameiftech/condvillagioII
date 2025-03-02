@@ -110,8 +110,21 @@
 
     <p>📌 Lembre-se: O grupo foi criado para facilitar a convivência, e não para gerar conflitos. O bom senso e o respeito devem prevalecer sempre!</p>
     <div class="button-container">
-        <button class="close-button" onclick="window.close()">Fechar a Página</button>
+        <button class="close-button" onclick="fecharPagina()">Fechar a Página</button>
     </div>
+    
+    <script>
+        function fecharPagina() {
+            // Verifica se a página foi aberta via script
+            if (window.history.length > 1) {
+                window.history.back(); // Tenta voltar para a página anterior
+            } else {
+                window.close(); // Fecha a aba (pode ser bloqueado por navegadores)
+                alert("Se a página não fechar automaticamente, feche-a manualmente.");
+            }
+        }
+    </script>
+    
     <hr>
     <a href="https://www.linkedin.com/in/deividfcastro/" target="_blank">Desenvolvido por Deivid Castro</a>
 
